@@ -1,3 +1,5 @@
+import Logo from './ui/Logo'
+
 const WA = 'https://wa.me/528140235824'
 
 const nav = [
@@ -15,11 +17,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
-          {/* Logo */}
-          <a href="#inicio" className="no-underline flex items-center gap-1.5 group">
-            <span className="font-mono text-lg font-bold" style={{ color: '#00E5FF', textShadow: '0 0 16px rgba(0,229,255,0.7)' }}>agent</span>
-            <span className="font-mono text-lg font-bold text-white" style={{ textShadow: '0 0 16px rgba(61,111,255,0.4)' }}>base</span>
-            <span className="font-mono text-lg font-bold text-cyan opacity-60 animate-pulse">_</span>
+          <a href="#inicio" className="no-underline flex items-center">
+            <Logo height={28} />
           </a>
 
           {/* Nav links */}

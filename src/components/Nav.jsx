@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Logo from './ui/Logo'
 
 const WA = 'https://wa.me/528140235824'
 
@@ -23,21 +24,8 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Typographic logo — monospaced with glow */}
-          <a href="#hero" className="flex items-center gap-2 no-underline group">
-            <span
-              className="font-mono text-xl font-bold tracking-tight text-cyan"
-              style={{ textShadow: '0 0 20px rgba(0,229,255,0.7), 0 0 40px rgba(0,229,255,0.3)' }}
-            >
-              agent
-            </span>
-            <span
-              className="font-mono text-xl font-bold tracking-tight text-white/90"
-              style={{ textShadow: '0 0 12px rgba(255,255,255,0.2)' }}
-            >
-              base
-            </span>
-            <span className="font-mono text-cyan text-lg animate-pulse">_</span>
+          <a href="#hero" className="no-underline flex items-center">
+            <Logo height={32} />
           </a>
 
           {/* Links */}

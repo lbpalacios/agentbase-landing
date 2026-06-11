@@ -6,7 +6,7 @@ const WA = 'https://wa.me/528140235824'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-svh flex items-center pt-16 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-16">
       {/* Radial glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-cyan/[0.07] blur-[120px]" />

@@ -14,7 +14,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-deep text-white overflow-x-hidden">
+    <div className="relative min-h-screen bg-deep text-white">
       <AnimatedBg />
       <Nav />
       <main>
