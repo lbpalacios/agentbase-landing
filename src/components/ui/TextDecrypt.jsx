@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from 'react'
 const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&'
 
 export default function TextDecrypt({ text, className = '', delay = 0, speed = 0.6 }) {
-  const [display, setDisplay]   = useState(() => text.replace(/[^\s]/g, '_'))
-  const [active, setActive]     = useState(false)
-  const rafRef = useRef(null)
+  const [display, setDisplay] = useState(() => text.replace(/[^\s]/g, '_'))
+  const [active, setActive]   = useState(false)
+  const rafRef  = useRef(null)
   const iterRef = useRef(0)
 
   useEffect(() => {
@@ -15,7 +15,6 @@ export default function TextDecrypt({ text, className = '', delay = 0, speed = 0
 
   useEffect(() => {
     if (!active) return
-
     const animate = () => {
       setDisplay(
         text.split('').map((ch, i) => {
@@ -31,10 +30,19 @@ export default function TextDecrypt({ text, className = '', delay = 0, speed = 0
         setDisplay(text)
       }
     }
-
     rafRef.current = requestAnimationFrame(animate)
     return () => cancelAnimationFrame(rafRef.current)
   }, [active, text, speed])
 
-  return <span className={`font-head ${className}`}>{display}</span>
+  return (
+    /* Outer span reserves the exact space of the final text — layout never shifts */
+    <span className="relative" style={{ display: 'block' }}>
+      <span aria-hidden="true" className={`font-head ${className}`} style={{ visibility: 'hidden', display: 'block' }}>
+        {text}
+      </span>
+      <span className={`font-head ${className}`} style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
+        {display}
+      </span>
+    </span>
+  )
 }

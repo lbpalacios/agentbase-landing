@@ -50,7 +50,6 @@ export default function Terminal() {
   const [lines, setLines]  = useState([])
   const [typing, setTyping] = useState('')
   const [cursor, setCursor] = useState(true)
-  const endRef = useRef(null)
   const idxRef = useRef(0)
   const restart = useRef(null)
 
@@ -108,10 +107,6 @@ export default function Terminal() {
     return () => clearTimeout(restart.current)
   }, [])
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [lines, typing])
-
   const renderLine = (entry, i) => {
     if (entry.type === 'gap') return <div key={i} className="h-2" />
     if (entry.type === 'prog') return <div key={i} className="py-0.5"><ProgressBar /></div>
@@ -168,7 +163,6 @@ export default function Terminal() {
             </div>
           )}
 
-          <div ref={endRef} />
         </div>
       </div>
     </div>
