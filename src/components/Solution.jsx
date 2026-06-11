@@ -36,7 +36,7 @@ export default function Solution() {
                   <BentoIcon color="rgba(0,229,255,0.1)" borderColor="rgba(0,229,255,0.2)">
                     <PhoneIcon stroke="#00E5FF" />
                   </BentoIcon>
-                  <h3 className="font-head font-semibold text-base mb-2">WhatsApp 24/7 con IA</h3>
+                  <h3 className="font-head font-semibold text-base text-white mb-2">WhatsApp 24/7 con IA</h3>
                   <p className="text-subtle text-sm leading-relaxed mb-4">
                     Tu agente responde, califica prospectos, agenda citas y genera cotizaciones por WhatsApp, sin importar la hora ni el día.
                   </p>
@@ -63,7 +63,7 @@ export default function Solution() {
               <BentoIcon color="rgba(139,92,246,0.1)" borderColor="rgba(139,92,246,0.2)">
                 <GlobeIcon stroke="#8B5CF6" />
               </BentoIcon>
-              <h3 className="font-head font-semibold text-base mb-2">Multi-idioma</h3>
+              <h3 className="font-head font-semibold text-base text-white mb-2">Multi-idioma</h3>
               <p className="text-subtle text-sm leading-relaxed">
                 Atiende clientes en español, inglés y más. Tu agente detecta y responde en el idioma del usuario automáticamente.
               </p>
@@ -79,7 +79,7 @@ export default function Solution() {
               <BentoIcon color="rgba(61,111,255,0.1)" borderColor="rgba(61,111,255,0.2)">
                 <ChartIcon stroke="#3D6FFF" />
               </BentoIcon>
-              <h3 className="font-head font-semibold text-base mb-2">Dashboard en tiempo real</h3>
+              <h3 className="font-head font-semibold text-base text-white mb-2">Dashboard en tiempo real</h3>
               <p className="text-subtle text-sm leading-relaxed">
                 Visualiza conversaciones, métricas de conversión y rendimiento desde un panel centralizado.
               </p>
@@ -95,7 +95,7 @@ export default function Solution() {
               <BentoIcon color="rgba(34,197,94,0.1)" borderColor="rgba(34,197,94,0.2)">
                 <CrmIcon stroke="#22C55E" />
               </BentoIcon>
-              <h3 className="font-head font-semibold text-base mb-2">CRM integrado</h3>
+              <h3 className="font-head font-semibold text-base text-white mb-2">CRM integrado</h3>
               <p className="text-subtle text-sm leading-relaxed">
                 Cada conversación queda registrada. Tu agente hace seguimiento automático de prospectos y clientes.
               </p>
@@ -111,7 +111,7 @@ export default function Solution() {
               <BentoIcon color="rgba(0,229,255,0.08)" borderColor="rgba(0,229,255,0.15)">
                 <CodeIcon stroke="#00E5FF" />
               </BentoIcon>
-              <h3 className="font-head font-semibold text-base mb-2">Sin código, sin complicaciones</h3>
+              <h3 className="font-head font-semibold text-base text-white mb-2">Sin código, sin complicaciones</h3>
               <p className="text-subtle text-sm leading-relaxed">
                 No necesitas saber programar ni contratar un equipo técnico. Configuramos todo y tu agente queda listo en 48 horas.
               </p>

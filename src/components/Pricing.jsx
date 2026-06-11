@@ -13,7 +13,7 @@ const plans = [
   },
   {
     name: 'Premium',
-    price: '$19,990',
+    price: '$14,990',
     desc: 'La opción ideal para empresas que necesitan atender múltiples canales con CRM integrado.',
     features: ['3 módulos personalizados','Multicanal (WhatsApp, Web, más)','CRM integrado completo','Dashboard avanzado','Soporte prioritario','Hardware en arrendamiento c/ opción a compra'],
     cta: 'Comenzar ahora', ctaStyle: 'solid', featured: true,
